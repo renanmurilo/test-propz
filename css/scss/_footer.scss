@@ -1,0 +1,28 @@
+footer {
+    width: 100%;
+    margin: 6rem auto 3rem;
+
+    .content__footer {
+        width: 100%;
+
+
+        .logo {
+            width: 150px;
+            height: 100px;
+            margin: auto;
+        }
+
+        .copy {
+            width: 100%;
+
+            @media ($mobile) {
+                padding: 0 1.25rem;
+            }
+
+            p {
+                @include font-mont(13px, 400);
+                color: $text;
+            }
+        }
+    }
+}

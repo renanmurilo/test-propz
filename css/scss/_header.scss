@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 6.25rem;
+
+        @media ($mobile) {
+            margin-top: 3.5rem;
+        }
+
+        h1 {
+            @include font-mont(4.375rem, 700);
+            color: #CB6B2B;
+            text-transform: uppercase;
+        }
+
+        .logo {
+            width: 180px;
+            height: 100px;
+            margin-top: 3.125rem;
+
+            @media ($mobile) {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}

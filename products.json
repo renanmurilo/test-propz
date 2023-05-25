@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://picsum.photos/300/300",
+      "nome": "Good Girl dot drama edp Carolina Herrera",
+      "ml": "80 ML",
+      "discount": "R$</span> 49 <span>,99</span>",
+      "price": "<span>R$</span> 38 <span>,07</span>",
+      "total": "R$499,00"
+    },
+    {
+      "id": 2,
+      "image": "https://picsum.photos/300/300",
+      "nome": "Good Girl dot drama edp Carolina Herrera",
+      "ml": "80 ML",
+      "discount": "R$</span> 49 <span>,99</span>",
+      "price": "<span>R$</span> 38 <span>,07</span>",
+      "total": "R$499,00"
+    },
+    {
+      "id": 3,
+      "image": "https://picsum.photos/300/300",
+      "nome": "Good Girl dot drama edp Carolina Herrera",
+      "ml": "80 ML",
+      "discount": "R$</span> 49 <span>,99</span>",
+      "price": "<span>R$</span> 38 <span>,07</span>",
+      "total": "R$499,00"
+    },
+    {
+      "id": 4,
+      "image": "https://picsum.photos/300/300",
+      "nome": "Good Girl dot drama edp Carolina Herrera",
+      "ml": "80 ML",
+      "discount": "R$</span> 49 <span>,99</span>",
+      "price": "<span>R$</span> 38 <span>,07</span>",
+      "total": "R$499,00"
+    },
+    {
+      "id": 5,
+      "image": "https://picsum.photos/300/300",
+      "nome": "Good Girl dot drama edp Carolina Herrera",
+      "ml": "80 ML",
+      "discount": "R$</span> 49 <span>,99</span>",
+      "price": "<span>R$</span> 38 <span>,07</span>",
+      "total": "R$499,00"
+    },
+    {
+      "id": 6,
+      "image": "https://picsum.photos/300/300",
+      "nome": "Good Girl dot drama edp Carolina Herrera",
+      "ml": "80 ML",
+      "discount": "R$</span> 49 <span>,99</span>",
+      "price": "<span>R$</span> 38 <span>,07</span>",
+      "total": "R$499,00"
+    }
+  ]
+}

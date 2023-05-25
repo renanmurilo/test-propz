@@ -1,0 +1,299 @@
+.content__home {
+    width: 100%;
+
+    .inner__home {
+        width: 100%;
+
+        @media ($mobile) {
+            position: relative;
+            margin-top: 6rem;
+
+            &::before,
+            &::after {
+                content: '';
+                width: 31.25rem;
+                height: 20px;
+                background-color: #CB6B2B;
+                position: absolute;
+                top: -5rem;
+                display: block;
+                left: -10%;
+                z-index: -1;
+                transform: rotate(15deg);
+            }
+
+            &::after {
+                transform: rotate(-10deg);
+                z-index: -1;
+                top: -6rem;
+            }
+        }
+
+        h2 {
+            @include font-mont(1.125rem, 600);
+            color: $black;
+            max-width: 34.375rem;
+            text-align: center;
+            line-height: 1.5rem;
+            margin: auto auto 4rem;
+
+            @media ($mobile) {
+                max-width: 19.5rem;
+                font-size: 12px;
+                line-height: 1.125rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .slider {
+            margin: auto;
+            width: 100%;
+
+            @media ($mobile) {
+                position: relative;
+
+                &::before,
+                &::after {
+                    content: '';
+                    width: 31.25rem;
+                    height: 20px;
+                    background-color: #CB6B2B;
+                    position: absolute;
+                    top: 5.5rem;
+                    display: block;
+                    left: -10%;
+                    z-index: 0;
+                    transform: rotate(15deg);
+                }
+
+                &::after {
+                    transform: rotate(-10deg);
+                    z-index: -1;
+                    top: 3rem;
+                }
+            }
+
+            .box,
+            .slick-slide {
+                width: 18.75rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media ($mobile) {
+                    width: 15rem;
+                }
+
+                .image {
+                    width: 18.75rem;
+                    height: 18.75rem;
+
+                    @media ($mobile) {
+                        width: 15rem;
+                        height: 15rem;
+                    }
+                }
+
+                .desctiption {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 1.5rem;
+                    width: 18.75rem;
+
+                    @media ($mobile) {
+                        width: 15rem;
+                    }
+
+                    .name {
+                        width: 100%;
+                        display: flex;
+                        padding-bottom: .5rem;
+                        border-bottom: 2px solid $black;
+                        margin-bottom: 1rem;
+
+                        h3 {
+                            @include font-mont(0.875rem, 600);
+                            color: $black;
+                            text-transform: uppercase;
+                            max-width: 15rem;
+                            line-height: 1.125rem;
+
+                            @media ($mobile) {
+                                font-size: 0.75rem;
+                                max-width: 12rem;
+                            }
+                        }
+
+                        .ml {
+                            align-self: flex-end;
+                            @include font-mont(0.875rem, 600);
+                            color: $black;
+
+                            @media ($mobile) {
+                                font-size: 0.75rem;
+                            }
+                        }
+                    }
+
+                    .price {
+                        width: 100%;
+
+                        .prices {
+                            .widget {
+                                display: flex;
+                                width: 100%;
+
+                                &:last-child {
+                                    margin-top: 1rem;
+                                    padding-bottom: .5rem;
+                                    border-bottom: 2px solid $black;
+                                }
+
+                                .widget__price {
+                                    width: 60%;
+                                    display: flex;
+                                    flex-wrap: wrap;
+
+                                    @media ($mobile) {
+                                        width: 54%;
+                                    }
+
+                                    &:last-child {
+                                        width: 40%;
+                                        height: 1.875rem;
+                                        display: flex;
+                                        justify-content: flex-end;
+
+                                        @media ($mobile) {
+                                            height: 1.25rem;
+                                            width: 45%;
+                                        }
+                                    }
+
+                                    &.total {
+                                        position: relative;
+                                        right: 2.2rem;
+
+                                        @media ($mobile) {
+                                            right: 0;
+                                        }
+                                    }
+
+                                    img {
+                                        width: 35%;
+                                        margin-left: .4rem;
+                                    }
+
+                                    h3 {
+                                        @include font-mont(1.5rem, 600);
+                                        color: $black;
+                                        text-transform: uppercase;
+                                        position: relative;
+
+                                        @media ($mobile) {
+                                            font-size: 1.25rem;
+                                        }
+
+                                        span {
+                                            font-size: 0.875rem;
+                                            position: relative;
+                                            bottom: .6rem;
+                                        }
+                                    }
+
+                                    p {
+                                        @include font-mont(0.75rem, 500);
+                                        color: $black;
+
+                                        @media ($mobile) {
+                                            font-size: 0.625rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slick-next {
+                width: 30px;
+                height: 30px;
+                right: -50px;
+                clip-path: polygon(0 0, 0% 100%, 100% 50%);
+                background-color: #CB6B2B;
+                color: #CB6B2B;
+                z-index: 999;
+
+                &::before {
+                    content: '';
+                }
+
+                @media (max-width: 768px) {
+                    right: 5%;
+                    top: 45%;
+                }
+
+            }
+
+            .slick-prev {
+                width: 30px;
+                height: 30px;
+                left: -50px;
+                clip-path: polygon(0 50%, 100% 100%, 100% 0);
+                background-color: #CB6B2B;
+                color: #CB6B2B;
+                z-index: 999;
+
+                &::before {
+                    content: '';
+                }
+
+
+                @media (max-width: 768px) {
+                    left: 5%;
+                    top: 45%;
+                }
+            }
+
+        }
+
+        .local {
+            width: 25rem;
+            height: 25rem;
+            border: 3px solid #CB6B2B;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 9.375rem auto 0;
+            padding: 2rem;
+
+            @media ($mobile) {
+                width: 90%;
+            }
+
+            .title {
+                width: 100%;
+                padding-bottom: 1.5rem;
+                margin-bottom: 3rem;
+                border-bottom: 0.0625rem solid #CB6B2B;
+
+                h3 {
+                    @include font-mont(18px, 700);
+                    color: $text;
+                    text-align: center;
+                }
+            }
+
+            ul {
+                li {
+                    @include font-mont(18px, 700);
+                    color: $text;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
